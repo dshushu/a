@@ -1,0 +1,2 @@
+module ACoreHelper
+end
