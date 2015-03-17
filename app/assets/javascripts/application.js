@@ -12,5 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+
+$(function() {
+    $('#comments').hide();
+    $('#button_comments').click(function() {
+        $('#comments').slideToggle();
+        $('#button_comments').html( 
+            $('#button_comments').html() == 'Hide Comments' ? 
+            'Show Comments' : 'Hide Comments'
+        );
+    });
+
+})

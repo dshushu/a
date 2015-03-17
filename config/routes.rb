@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  resources :comments
+
+  devise_for :members
+  resources :events
+
   get '/index'  => 'a_core#index'
-  get '/events' => 'a_core#events'
   get '/shop'   => 'a_core#shop'
   get '/discussion' => 'a_core#discussion'
 
