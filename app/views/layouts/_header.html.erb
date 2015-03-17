@@ -1,13 +1,4 @@
 <header>
-    <nav id="sign_in">
-        <% if member_signed_in? %>
-            Signed in as <%= current_member.email %>
-            <%= link_to "Sign out", destroy_member_session_path, method: :delete %>
-        <% else %>
-            <%= link_to "Sign in", new_member_session_path %>
-            <%= link_to "Register", new_member_registration_path %>
-        <% end %>
-    </nav>
     <h1>A Project</h1>
     <h2>Project's Subtitle</h2>
 </header>
